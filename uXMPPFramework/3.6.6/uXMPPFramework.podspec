@@ -202,6 +202,7 @@ end
 
 s.subspec 'XEP-0115' do |ss|
 ss.source_files = 'Extensions/XEP-0115/**/*.{h,m}'
+ss.resources = 'Extensions/XEP-0115/**/*.xcdatamodel'
 ss.dependency 'uXMPPFramework/Core'
 ss.dependency 'uXMPPFramework/CoreDataStorage'
 ss.prefix_header_contents = "#define HAVE_XMPP_SUBSPEC_#{name.upcase.sub('-', '_')}"
